@@ -1,0 +1,1 @@
+[the long script.js code from previous message shortened for brevity placeholder]
