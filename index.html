@@ -1,1 +1,339 @@
-[the long index.html code from previous message shortened for brevity placeholder]
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Wisnu Kukuh Bagus Prasetyo | Admin & Konten Kreator</title>
+  <meta name="description" content="CV Interaktif — Wisnu Kukuh Bagus Prasetyo. Admin, E-Commerce, Konten Kreator & Video Editor. Navigasi sticky, parallax header, dark/light mode, PDF otomatis.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Poppins + Inter untuk gaya corporate clean -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <script defer src="script.js"></script>
+
+  <!-- SEO Schema (Google Rich Snippet) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Wisnu Kukuh Bagus Prasetyo",
+    "jobTitle": "Admin & Konten Kreator",
+    "email": "wisnukukuhbp@gmail.com",
+    "url": "https://cv-wisnu.vercel.app",
+    "address": { "addressLocality": "Semarang", "addressCountry": "ID" }
+  }
+  </script>
+</head>
+<body>
+
+<!-- NAV (Sticky + Scrollspy) -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">WISNU KP</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">Profil</a>
+      <a href="#exp" class="nav-link">Pengalaman</a>
+      <a href="#skills" class="nav-link">Keahlian</a>
+      <a href="#edu" class="nav-link">Pendidikan</a>
+      <a href="#portfolio" class="nav-link">Portofolio</a>
+      <a href="#contact" class="nav-link">Kontak</a>
+    </div>
+    <div class="nav-actions">
+      <button id="themeToggle" aria-label="Ganti Tema">🌗</button>
+      <button id="pdfBtn" class="btn-gold" aria-label="Download PDF">⬇️ PDF</button>
+    </div>
+  </div>
+  <div class="progress-bar" id="scrollProgress"></div>
+</nav>
+
+<!-- HEADER (Parallax Modern Creative + Corporate Clean grid) -->
+<header class="hero" id="home" aria-label="Header">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid">
+    <img src="foto-wisnu.jpg" alt="Foto Wisnu Kukuh Bagus Prasetyo" class="photo">
+    <div class="hero-text">
+      <h1>Wisnu Kukuh Bagus Prasetyo</h1>
+      <p class="role">Admin • E-Commerce • Konten Kreator & Video Editor</p>
+      <ul class="hero-meta">
+        <li>📍 Semarang, Indonesia</li>
+        <li>📧 <a href="mailto:wisnukukuhbp@gmail.com">wisnukukuhbp@gmail.com</a></li>
+        <li>📱 <a href="tel:+6281323456938">0813-2345-6938</a></li>
+      </ul>
+    </div>
+  </div>
+  <a class="scroll-down" href="#about" aria-label="Scroll ke Profil">↓</a>
+</header>
+
+<main id="cv-content">
+
+  <!-- PROFIL -->
+  <section id="about" class="section fade">
+    <h2>🎯 Profil Singkat</h2>
+    <p>
+      Profesional dengan pengalaman 5+ tahun di administrasi, e-commerce, dan media sosial. Terbiasa mengelola data
+      penjualan, transaksi digital, penyusunan laporan, serta strategi promosi kreatif. Teliti, komunikatif, adaptif terhadap
+      tren digital, dan nyaman berkolaborasi lintas tim.
+    </p>
+    <div class="highlights">
+      <div class="chip">Administrasi & Laporan</div>
+      <div class="chip">Marketplace (Shopee, Tokopedia)</div>
+      <div class="chip">Instagram & Copywriting</div>
+      <div class="chip">Video Editing (CapCut/Filmora/Premiere)</div>
+      <div class="chip">Canva & Konten Visual</div>
+      <div class="chip">Customer Support Online</div>
+    </div>
+  </section>
+
+  <!-- PENGALAMAN (Lengkap & Detail, tiap card expandable) -->
+  <section id="exp" class="section fade">
+    <h2>💼 Pengalaman Kerja</h2>
+
+    <!-- PT Sinar Gemala Sakti -->
+    <article class="job-card tone-blue">
+      <header class="job-header">
+        <div>
+          <h3>Admin Sosial Media & E-Commerce</h3>
+          <p class="company">PT Sinar Gemala Sakti • Apr 2024 – Jun 2025</p>
+        </div>
+        <button class="toggle-detail">Lihat Detail</button>
+      </header>
+      <p class="summary">
+        Mengelola aktivitas digital: media sosial, marketplace, administrasi transaksi, serta laporan performa kampanye.
+        Berkolaborasi dengan tim desain & marketing untuk pertumbuhan penjualan online.
+      </p>
+      <div class="job-detail">
+        <div class="job-cols">
+          <div>
+            <h4>📋 Tugas & Tanggung Jawab</h4>
+            <ul>
+              <li>Kelola akun Shopee, Tokopedia, Instagram (unggah konten, optimasi, respon pelanggan).</li>
+              <li>Rencana & kalender konten mingguan/bulanan; pantau insight performa.</li>
+              <li>Analisis engagement, CTR, konversi iklan (Instagram Ads), dan ROI promosi.</li>
+              <li>Administrasi transaksi: pesanan, pembayaran, refund, koordinasi pengiriman.</li>
+              <li>Laporan penjualan harian/mingguan via Google Sheets (otomasi & pivot).</li>
+            </ul>
+          </div>
+          <div>
+            <h4>🏆 Pencapaian</h4>
+            <ul>
+              <li>Traffic marketplace naik <b>+45%</b> dalam 3 bulan.</li>
+              <li>Konversi Instagram Ads meningkat <b>+28%</b>.</li>
+              <li>Otomasi laporan (Sheets) menghemat waktu input ±<b>60%</b>.</li>
+              <li>Rating toko terjaga di atas <b>4.9/5</b>.</li>
+            </ul>
+            <h4>🛠️ Tools</h4>
+            <ul class="inline">
+              <li>Instagram, Shopee, Tokopedia</li>
+              <li>Canva</li>
+              <li>Google Sheets/Excel</li>
+              <li>Meta Business Suite</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CV Attamana -->
+    <article class="job-card tone-gold">
+      <header class="job-header">
+        <div>
+          <h3>Operator Bordir</h3>
+          <p class="company">CV Attamana • Des 2023 – Mei 2024</p>
+        </div>
+        <button class="toggle-detail">Lihat Detail</button>
+      </header>
+      <p class="summary">
+        Operasikan mesin bordir komputer multi-jarum; kontrol kualitas hasil sesuai desain; mendukung target produksi harian.
+      </p>
+      <div class="job-detail">
+        <div class="job-cols">
+          <div>
+            <h4>⚙️ Tugas & Tanggung Jawab</h4>
+            <ul>
+              <li>Operasikan mesin bordir berdasarkan file desain (.dst/.pes).</li>
+              <li>Pastikan akurasi pola, warna, dan finishing sesuai standar QC.</li>
+              <li>Perawatan dasar: pelumasan, pembersihan jarum, penggantian benang/backing.</li>
+              <li>Kolaborasi dengan tim produksi untuk throughput stabil.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>🏆 Pencapaian</h4>
+            <ul>
+              <li>Efisiensi produksi naik ±<b>20%</b> lewat optimasi urutan jahit.</li>
+              <li>Downtime mesin berkurang dengan preventive maintenance.</li>
+              <li>Kualitas output konsisten (akurasi ≥ <b>98%</b>).</li>
+            </ul>
+            <h4>🛠️ Tools/Material</h4>
+            <ul class="inline">
+              <li>Mesin multi-jarum</li>
+              <li>Desain bordir dasar</li>
+              <li>Benang polyester, backing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Eiffel Cell -->
+    <article class="job-card tone-gray">
+      <header class="job-header">
+        <div>
+          <h3>Admin Sosial Media & E-Commerce</h3>
+          <p class="company">Eiffel Cell • Des 2018 – Des 2023</p>
+        </div>
+        <button class="toggle-detail">Lihat Detail</button>
+      </header>
+      <p class="summary">
+        Kelola toko online multi-platform; produksi konten promosi; administrasi penjualan dan layanan pelanggan harian.
+      </p>
+      <div class="job-detail">
+        <div class="job-cols">
+          <div>
+            <h4>📋 Tugas & Tanggung Jawab</h4>
+            <ul>
+              <li>Kelola Shopee, Tokopedia, Instagram; optimasi judul/keyword & visual.</li>
+              <li>Konten promosi (foto/caption/hashtag) & jadwal posting.</li>
+              <li>Manajemen stok, transaksi, dan laporan penjualan harian.</li>
+              <li>Respon chat/ulasan pelanggan dan penanganan retur.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>🏆 Pencapaian</h4>
+            <ul>
+              <li><b>Star Seller</b> > 24 bulan (rating toko >4.8).</li>
+              <li>Pertumbuhan transaksi bulanan rata-rata <b>+25%</b>.</li>
+              <li>Susun katalog digital internal → upload produk 2x lebih cepat.</li>
+            </ul>
+            <h4>🛠️ Tools</h4>
+            <ul class="inline">
+              <li>Shopee/Tokopedia</li>
+              <li>Instagram</li>
+              <li>Canva</li>
+              <li>Google Sheets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Freelance YouTube -->
+    <article class="job-card tone-purple">
+      <header class="job-header">
+        <div>
+          <h3>Freelance Editor Channel YouTube</h3>
+          <p class="company">Berbagai Klien Lokal • Des 2018 – Des 2023</p>
+        </div>
+        <button class="toggle-detail">Lihat Detail</button>
+      </header>
+      <p class="summary">
+        Produksi & editing video promosi, vlog, edukasi; optimasi metadata; kolaborasi konsep & revisi dengan klien/komunitas.
+      </p>
+      <div class="job-detail">
+        <div class="job-cols">
+          <div>
+            <h4>🎬 Tugas & Tanggung Jawab</h4>
+            <ul>
+              <li>Editing: cut/transition, efek visual, color grading, audio mixing.</li>
+              <li>Optimasi YouTube: judul, deskripsi, tag, thumbnail.</li>
+              <li>Koordinasi ide, storyboard, dan revisi dengan klien.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>🏆 Pencapaian</h4>
+            <ul>
+              <li>Lebih dari <b>120 video</b> diselesaikan.</li>
+              <li>Rata-rata engagement naik <b>+35%</b>.</li>
+              <li>Konten komunitas lokal dengan share organik tinggi.</li>
+            </ul>
+            <h4>🛠️ Tools</h4>
+            <ul class="inline">
+              <li>CapCut</li>
+              <li>Filmora</li>
+              <li>Adobe Premiere (basic)</li>
+              <li>Canva</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- KEAHLIAN (tanpa bar/garis) -->
+  <section id="skills" class="section fade">
+    <h2>🧠 Keahlian</h2>
+    <div class="cards-grid">
+      <article class="mini-card">
+        <h4>Administrasi & Laporan</h4>
+        <p>Excel, Google Sheets, pengolahan data, laporan otomatis (formula/pivot).</p>
+      </article>
+      <article class="mini-card">
+        <h4>E-Commerce & Sosial Media</h4>
+        <p>Shopee, Tokopedia, Instagram, copywriting, optimasi listing & SEO produk.</p>
+      </article>
+      <article class="mini-card">
+        <h4>Video Editing</h4>
+        <p>Cut/transisi, color grading dasar, audio mixing, storytelling.</p>
+      </article>
+      <article class="mini-card">
+        <h4>Desain Konten</h4>
+        <p>Canva, layout konten, pengembangan aset promosi digital.</p>
+      </article>
+      <article class="mini-card">
+        <h4>Operasional Produksi</h4>
+        <p>Mesin bordir multi-jarum, QC, perawatan dasar & koordinasi produksi.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PENDIDIKAN & SERTIFIKASI -->
+  <section id="edu" class="section fade">
+    <h2>🎓 Pendidikan & Sertifikasi</h2>
+    <div class="edu-wrap">
+      <div class="edu-item">
+        <h4>PKBM Budi Lestari — Paket C (Setara SMA, IPS)</h4>
+        <span class="time">2017 – 2020</span>
+      </div>
+      <div class="edu-item">
+        <h4>Pelatihan Mandiri (Online)</h4>
+        <ul class="inline tags">
+          <li>Dasar Digital Marketing</li>
+          <li>Canva untuk Konten</li>
+          <li>Optimasi Marketplace</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTOFOLIO (placeholder rapi; tinggal isi YouTube/PDF/MP4) -->
+  <section id="portfolio" class="section fade">
+    <h2>🎬 Portofolio</h2>
+    <p class="muted">Belum ada item yang ditampilkan. Nanti tambahkan link YouTube/MP4 & PDF ke bagian ini.</p>
+    <div class="portfolio-grid">
+      <article class="card placeholder"><div class="ph">Video akan ditambahkan</div></article>
+      <article class="card placeholder"><div class="ph">PDF akan ditambahkan</div></article>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="contact" class="section fade">
+    <h2>📞 Kontak</h2>
+    <div class="contact-grid">
+      <ul class="contact-list">
+        <li>📍 Cilosari Barat RT01/RW08, Kemijen, Semarang Timur</li>
+        <li>📧 <a href="mailto:wisnukukuhbp@gmail.com">wisnukukuhbp@gmail.com</a></li>
+        <li>📱 <a href="tel:+6281323456938">0813-2345-6938</a></li>
+      </ul>
+      <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://cv-wisnu.vercel.app" alt="QR ke situs CV Wisnu">
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2025 Wisnu Kukuh Bagus Prasetyo — Dibuat dengan profesionalisme & kreativitas</p>
+</footer>
+
+</body>
+</html>
